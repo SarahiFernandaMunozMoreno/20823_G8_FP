@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int N_1, N_2, r;
+    cout << "Ingresar el Dividendo: ";
+    cin >> N_1;
+    cout << "Ingresar el Divisor: ";
+    cin >> N_2;
+    r = N_1 % N_2; 
+    if (r == 0) {  
+        cout << "Los numeros si son divisibles entre si." << endl;
+    } else {
+        cout << "Los numeros no son divisibles entre si." << endl;
+    }
+    return 0;
+}
