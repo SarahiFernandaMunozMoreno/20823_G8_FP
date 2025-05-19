@@ -1,9 +1,9 @@
 Proceso MaximoMinimoMediaAlturas
-	// Declaración de variables
+	// DeclaraciÃ³n de variables
 	Definir N_1, Sum, Med, Max, Min Como Real;
 	Definir contador Como Entero;
 	Definir N_0 Como Logico;
-	// Inicialización
+	// InicializaciÃ³n
 	Sum <- 0;
 	contador <- 0;
 	N_0 <- Verdadero;
@@ -12,13 +12,13 @@ Proceso MaximoMinimoMediaAlturas
 		Escribir 'Ingrese una altura: '; //Ingresa un numero negativo para terminar
 		Leer N_1;
 		Si N_1>=0 Entonces
-			// Inicializar maximo y minimo con la primera altura válida
+			// Inicializar maximo y minimo con la primera altura vÃ¡lida
 			Si N_0 Entonces
 				Max <- N_1;
 				Min <- N_1;
 				N_0 <- Falso;
 			SiNo
-				// Actualizar máximo y mínimo
+				// Actualizar mÃ¡ximo y mÃ­nimo
 				Si N_1>Max Entonces
 					Max <- N_1;
 				FinSi
@@ -35,9 +35,9 @@ Proceso MaximoMinimoMediaAlturas
 	Si contador>0 Entonces
 		Med <- Sum/contador;
 		Escribir 'Media de alturas: ', Med;
-		Escribir 'Altura máxima: ', Max;
-		Escribir 'Altura mínima: ', Min;
+		Escribir 'Altura mÃ¡xima: ', Max;
+		Escribir 'Altura mÃ­nima: ', Min;
 	SiNo
-		Escribir 'No se ingresaron alturas válidas.';
+		Escribir 'No se ingresaron alturas vÃ¡lidas.';
 	FinSi
 FinProceso
