@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+    float nota;
+    do {
+        cout << "Ingrese una nota entre 0 y 10: ";
+        cin >> nota;
+        if(nota < 0 || nota > 10) {
+            cout << "Nota invalida. Debe estar entre 0 y 10." << endl;
+        }
+    } while(nota < 0 || nota > 10);
+    cout << "Nota valida ingresada: " << nota << endl;
+    return 0;
+}
