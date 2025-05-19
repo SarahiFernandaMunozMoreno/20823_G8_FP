@@ -11,5 +11,5 @@ Proceso CONVERSION_UNIDADES_TIEMPO
 	Escribir 'Segundos: ', Seg
 	Escribir 'Minutos: ', Min
 	Escribir 'Horas: ', Hrs
-	Escribir 'Días: ', Dias
+	Escribir 'DÃ­as: ', Dias
 FinProceso
