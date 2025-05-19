@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath> 
+using namespace std;
+int main() {
+    double x, r, p;
+    cout << "Ingresa un numero aleatorio: ";
+    cin >> x;
+    r = abs(x); 
+    if (x < 0) {
+        x = -x;
+    }
+    p = pow(r, 3 ); 
+    cout << "El valor absoluto es: " << x << endl;
+    cout << "El valor de la potencia es: " << p << endl;
+    return 0;
+}
