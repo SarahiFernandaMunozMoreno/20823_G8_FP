@@ -1,12 +1,13 @@
 #include <iostream>
 using namespace std;
 int main() {
-    double N_1, N_2, M;
-    cout << "Ingresa un primer numero real: ";
-    cin >> N_1;  
-    cout << "Ingresa el segundo numero real: ";
-    cin >> N_2;
-    M = (N_1 + N_2) / 2;
-    cout << "La media entre ellos es: " << M << endl;
+    int edad;
+    cout << "Por favor, ingrese su edad: ";
+    cin >> edad;
+    if (edad >= 18) {
+        cout << "Eres mayor de edad." << endl;
+    } else {
+        cout << "Eres menor de edad." << endl;
+    }
     return 0;
 }
