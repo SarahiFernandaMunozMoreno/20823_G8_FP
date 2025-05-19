@@ -1,0 +1,45 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+float leerNotaValida(int numeroNota) {
+    float nota;
+    do {
+        cout << "Ingrese la nota " << numeroNota << " (0-10): ";
+        cin >> nota;
+        if (cin.fail() || nota < 0 || nota > 10) {
+            cin.clear();
+            cin.ignore(1000, '\n');
+            cout << "Error: Debe ingresar un número entre 0 y 10\n";
+        } else {
+            break;
+        }
+    } while (true);
+    return nota;
+}
+
+int main() {
+    float N_1, N_2, N_3, N_4, N_5, promedio;
+    
+    cout << "CALCULADORA DE PROMEDIO (5 NOTAS)\n";
+    cout << "--------------------------------\n";
+    
+    N_1 = leerNotaValida(1);
+    N_2 = leerNotaValida(2);
+    N_3 = leerNotaValida(3);
+    N_4 = leerNotaValida(4);
+    N_5 = leerNotaValida(5);
+    
+    promedio = (N_1 + N_2 + N_3 + N_4 + N_5) / 5;
+    
+    cout << fixed << setprecision(2);
+    cout << "\nEl promedio de las notas es: " << promedio << endl;
+    
+    if (promedio >= 6.0) {
+        cout << "Aprobado" << endl;
+    } else {
+        cout << "Reprobado" << endl;
+    }
+    
+    return 0;
+}
