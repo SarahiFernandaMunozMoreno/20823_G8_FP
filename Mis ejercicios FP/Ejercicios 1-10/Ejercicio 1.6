@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main() {
+	float i;
+	float l;
+	float media;
+	float numero;
+	i = 0;
+	l = 0;
+	cout << "Ingrese un número positivo:" << endl;
+	cout << "Si desea temrinar ingrese un numero negativo" << endl;
+	cin >> numero;
+	while (numero>0) {
+		i = i+numero;
+		l = l+1;
+		cout << "Ingrese otro número positivo:" << endl;
+		cout << "Si desea temrinar ingrese un numero negativo" << endl;
+		cin >> numero;
+	}
+	if (l>0) {
+		media = i/l;
+		cout << "La media de los números ingresados es: " << media << endl;
+	} else {
+		cout << "No se ingresaron números positivos." << endl;
+	}
+	return 0;
+}
