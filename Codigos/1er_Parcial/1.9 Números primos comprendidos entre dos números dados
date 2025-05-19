@@ -2,13 +2,13 @@ Algoritmo NumerosPrimosEnRango
     Definir N_1, N_2, i, j Como Entero;
     Definir esPrimo Como Logico;
     
-    Escribir "Ingrese el primer número (límite inferior):";
+    Escribir "Ingrese el primer nÃºmero (lÃ­mite inferior):";
     Leer N_1;
     
-    Escribir "Ingrese el segundo número (límite superior):";
+    Escribir "Ingrese el segundo nÃºmero (lÃ­mite superior):";
     Leer N_2;
     
-    Escribir "Números primos entre ", N_1, " y ", N_2, ":";
+    Escribir "NÃºmeros primos entre ", N_1, " y ", N_2, ":";
     
     // Asegurar que _1 sea menor que _2
     Si _1 > _2 Entonces
