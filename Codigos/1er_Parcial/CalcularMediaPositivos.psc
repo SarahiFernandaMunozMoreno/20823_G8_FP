@@ -1,29 +1,21 @@
 Proceso CalcularMediaPositivos
-	Definir n1, n2, n3, mas, cont, r Como Real
-	mas=0
-	cont=0
-	Escribir "Insertar el Primer numero"
-	Leer n1
-	Si n1>0 Entonces
-		mas = mas+n1
-		cont = cont+1
-	FinSi
-	Escribir "Insertar el Segundo numero"
-	Leer n2
-	Si n2>0 Entonces
-		mas = mas+n2
-		cont = cont+1
-	FinSi
-	Escribir "Insertar el Tercer numero"
-	Leer n3
-	Si n3>0 Entonces
-		mas = mas+n3
-		cont = cont+1
-	FinSi
-	Si cont>0 Entonces
-		r = mas/cont
-		Escribir 'Media: ', r
-	SiNo
-		Escribir 'No se introdujeron n�meros positivos.'
-	FinSi
+	    Definir i, L, numero Como Real
+    i <- 0
+    L <- 0
+    Escribir "Ingrese números (ingrese un número negativo para terminar): "
+    Repetir
+        Leer numero
+        Si numero > 0 Entonces
+            i <- i + numero
+            L <- L + 1
+        FinSi
+    Hasta Que numero < 0
+	
+    Si L > 0 Entonces
+        media <- i / L
+        Escribir "La media de los números positivos es: ", media
+    Sino
+        Escribir "No se ingresaron números positivos"
+    FinSi
+	
 FinProceso
