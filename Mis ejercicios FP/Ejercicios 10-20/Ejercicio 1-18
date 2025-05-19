@@ -1,25 +1,15 @@
 #include <iostream>
-#include <string> // Para usar el tipo string
 using namespace std;
 
 int main() {
-    const string CONTRASENA_CORRECTA = "seC01"; // Contraseña definida
-    string contrasenaIngresada;
-    bool esCorrecta = false;
-
-    cout << "=== Sistema de Validacion de Contraseña ===" << endl;
-
-    while (!esCorrecta) {
-        cout << "Ingrese la contraseña: ";
-        cin >> contrasenaIngresada;
-
-        if (contrasenaIngresada == CONTRASENA_CORRECTA) {
-            esCorrecta = true;
-            cout << "¡Contraseña correcta! Acceso concedido." << endl;
-        } else {
-            cout << "Contraseña incorrecta. Intente nuevamente." << endl;
+    int X; // Definir X como entero
+    
+    // para X desde 1 hasta 10 hacer
+    for (X = 1; X <= 10; X++) {
+        if (X % 2 == 0) {
+            cout << X << " "; // Mostrar X
         }
     }
-
+    
     return 0;
 }
