@@ -1,13 +1,12 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 int main() {
     int edad;
-    cout << "Por favor, ingrese su edad: ";
-    cin >> edad;
+    printf("Por favor, ingrese su edad: ");
+    scanf("%d", &edad);
     if (edad >= 18) {
-        cout << "Eres mayor de edad." << endl;
+        printf("Eres mayor de edad.\n");
     } else {
-        cout << "Eres menor de edad." << endl;
+        printf("Eres menor de edad.\n");
     }
     return 0;
 }
