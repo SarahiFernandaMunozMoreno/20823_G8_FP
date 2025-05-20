@@ -1,12 +1,17 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
+
 int main() {
     double N_1, N_2, M;
-    cout << "Ingresa un primer numero real: ";
-    cin >> N_1;  
-    cout << "Ingresa el segundo numero real: ";
-    cin >> N_2;
+    
+    printf("Ingresa un primer numero real: ");
+    scanf("%lf", &N_1);
+    
+    printf("Ingresa el segundo numero real: ");
+    scanf("%lf", &N_2);
+    
     M = (N_1 + N_2) / 2;
-    cout << "La media entre ellos es: " << M << endl;
+    
+    printf("La media entre ellos es: %lf\n", M);
+    
     return 0;
 }
