@@ -1,25 +1,16 @@
-#include <iostream>
-using namespace std;
-
+#include <stdio.h>
 int main() {
     int x;
-    cout << "Ingrese el número de segundos: ";
-    cin >> x;
-    
+    printf("Ingrese el número de segundos: ");
+    scanf("%d", &x);
     int dias = x / 86400;
     x = x % 86400;
-    
     int horas = x / 3600;
     x = x % 3600;
-
     int minutos = x / 60;
     int segundos = x % 60;
-
-    cout << "Equivale a:" << endl;
-    cout << dias << " días, " 
-         << horas << " horas, " 
-         << minutos << " minutos, " 
-         << segundos << " segundos" << endl;
-
+    printf("Equivale a:\n");
+    printf("%d días, %d horas, %d minutos, %d segundos\n", 
+           dias, horas, minutos, segundos);
     return 0;
 }
