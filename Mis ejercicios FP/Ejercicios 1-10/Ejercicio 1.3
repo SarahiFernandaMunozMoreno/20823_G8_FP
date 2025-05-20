@@ -1,16 +1,15 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 int main() {
     int N_1, N_2, r;
-    cout << "Ingresar el Dividendo: ";
-    cin >> N_1;
-    cout << "Ingresar el Divisor: ";
-    cin >> N_2;
-    r = N_1 % N_2; 
-    if (r == 0) {  
-        cout << "Los numeros si son divisibles entre si." << endl;
+    printf("Ingresar el Dividendo: ");
+    scanf("%d", &N_1);
+    printf("Ingresar el Divisor: ");
+    scanf("%d", &N_2);
+    r = N_1 % N_2;
+    if (r == 0) {
+        printf("Los numeros si son divisibles entre si.\n");
     } else {
-        cout << "Los numeros no son divisibles entre si." << endl;
+        printf("Los numeros no son divisibles entre si.\n");
     }
     return 0;
 }
