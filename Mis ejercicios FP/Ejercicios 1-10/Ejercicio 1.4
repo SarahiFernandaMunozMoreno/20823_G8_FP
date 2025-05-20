@@ -1,13 +1,12 @@
-#include<iostream>
-using namespace std;
+#include <stdio.h>
 int main() {
-	float n_1;
-	cout << "Ingresa un numero entero mayor a 0: " << endl;
-	cin >> n_1;
-	if (((n_1>=0) && (n_1<10))) {
-		cout << "Si esta en el intervalo" << endl;
-	} else {
-		cout << "No pertenece al intervalo" << endl;
-	}
-	return 0;
+    float n_1;
+    printf("Ingresa un numero entero mayor a 0: \n");
+    scanf("%f", &n_1);
+    if ((n_1 >= 0) && (n_1 < 10)) {
+        printf("Si esta en el intervalo\n");
+    } else {
+        printf("No pertenece al intervalo\n");
+    }
+    return 0;
 }
