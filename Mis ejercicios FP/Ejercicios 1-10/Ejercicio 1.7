@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <stdbool.h> // Para el tipo bool
+int main() {
+    // Definición de variables
+    float N_1, Sum, Med, Max, Min;
+    int contador;
+    bool N_0;
+    
+    // Inicialización
+    Sum = 0;
+    contador = 0;
+    N_0 = true;
+    
+    // Bucle
+    do {
+        printf("Ingrese una altura: "); // Ingresa un numero negativo para terminar
+        scanf("%f", &N_1);
+        
+        if (N_1 >= 0) {
+            // Inicializar maximo y minimo con la primera altura
+            if (N_0) {
+                Max = N_1;
+                Min = N_1;
+                N_0 = false;
+            } else {
+                // Actualizar máximo y mínimo
+                if (N_1 > Max) {
+                    Max = N_1;
+                }
+                if (N_1 < Min) {
+                    Min = N_1;
+                }
+            }
+            // Acumular para la media
+            Sum = Sum + N_1;
+            contador = contador + 1;
+        }
+    } while (N_1 >= 0);
+    if (contador > 0) {
+        Med = Sum / contador;
+        printf("\nMedia de alturas: %.2f\n", Med);
+        printf("Altura máxima: %.2f\n", Max);
+        printf("Altura mínima: %.2f\n", Min);
+    } else {
+        printf("\nNo se ingresaron alturas válidas.\n");
+    }
+    
+    return 0;
+}
