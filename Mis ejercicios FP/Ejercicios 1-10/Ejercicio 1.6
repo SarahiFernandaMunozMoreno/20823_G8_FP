@@ -1,27 +1,29 @@
-#include<iostream>
-using namespace std;
+#include <stdio.h>
+
 int main() {
-	float i;
-	float l;
-	float media;
-	float numero;
-	i = 0;
-	l = 0;
-	cout << "Ingrese un número positivo:" << endl;
-	cout << "Si desea temrinar ingrese un numero negativo" << endl;
-	cin >> numero;
-	while (numero>0) {
-		i = i+numero;
-		l = l+1;
-		cout << "Ingrese otro número positivo:" << endl;
-		cout << "Si desea temrinar ingrese un numero negativo" << endl;
-		cin >> numero;
-	}
-	if (l>0) {
-		media = i/l;
-		cout << "La media de los números ingresados es: " << media << endl;
-	} else {
-		cout << "No se ingresaron números positivos." << endl;
-	}
-	return 0;
+    float suma = 0.0f;  // i -> suma (nombre más descriptivo)
+    float contador = 0.0f;  // l -> contador
+    float media;
+    float numero;
+
+    printf("Calculadora de media de numeros positivos\n");
+    printf("Ingrese un numero positivo (negativo para terminar): ");
+    scanf("%f", &numero);
+
+    while (numero > 0) {
+        suma += numero;  // Equivalente a i = i + numero
+        contador++;
+        
+        printf("Ingrese otro numero positivo (negativo para terminar): ");
+        scanf("%f", &numero);
+    }
+
+    if (contador > 0) {
+        media = suma / contador;
+        printf("\nLa media de los %.0f numeros ingresados es: %.4f\n", contador, media);
+    } else {
+        printf("\nNo se ingresaron numeros positivos.\n");
+    }
+
+    return 0;
 }
