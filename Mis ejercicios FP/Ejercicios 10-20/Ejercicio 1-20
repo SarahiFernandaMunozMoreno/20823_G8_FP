@@ -1,46 +1,9 @@
 #include <stdio.h>
-#include <ctype.h> 
-float leerNotaValida(int numeroNota) {
-    float nota;
-    char buffer[100];
-    int valido;
-    do {
-        printf("Ingrese la nota %d (0-10): ", numeroNota);
-        valido = scanf("%f", &nota);
-        
-        while(getchar() != '\n');
-        
-        if (valido != 1 || nota < 0 || nota > 10) {
-            printf("Error: Debe ingresar un numero entre 0 y 10\n");
-        } else {
-            break;
-        }
-    } while (1);
-    
-    return nota;
-}
-
 int main() {
-    float N_1, N_2, N_3, N_4, N_5, promedio;
-    
-    printf("CALCULADORA DE PROMEDIO (5 NOTAS)\n");
-    printf("--------------------------------\n");
-    
-    N_1 = leerNotaValida(1);
-    N_2 = leerNotaValida(2);
-    N_3 = leerNotaValida(3);
-    N_4 = leerNotaValida(4);
-    N_5 = leerNotaValida(5);
-    
-    promedio = (N_1 + N_2 + N_3 + N_4 + N_5) / 5;
-    
-    printf("\nEl promedio de las notas es: %.2f\n", promedio);
-    
-    if (promedio >= 6.0) {
-        printf("Aprobado\n");
-    } else {
-        printf("Reprobado\n");
-    }
-    
+    float N1, N2, N3, N4, N5, promedio;
+    printf("Ingrese 5 números separados por espacios: ");
+    scanf("%f %f %f %f %f", &N1, &N2, &N3, &N4, &N5);
+    promedio = (N1 + N2 + N3 + N4 + N5) / 5;
+    printf("El promedio es: %.2f\n", promedio);
     return 0;
 }
