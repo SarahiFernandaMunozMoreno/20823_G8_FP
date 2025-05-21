@@ -1,28 +1,30 @@
-#include <iostream>
-#include <iomanip>
-using namespace std;
-
+#include <stdio.h>
+#include <ctype.h> 
 float leerNotaValida(int numeroNota) {
     float nota;
+    char buffer[100];
+    int valido;
     do {
-        cout << "Ingrese la nota " << numeroNota << " (0-10): ";
-        cin >> nota;
-        if (cin.fail() || nota < 0 || nota > 10) {
-            cin.clear();
-            cin.ignore(1000, '\n');
-            cout << "Error: Debe ingresar un número entre 0 y 10\n";
+        printf("Ingrese la nota %d (0-10): ", numeroNota);
+        valido = scanf("%f", &nota);
+        
+        while(getchar() != '\n');
+        
+        if (valido != 1 || nota < 0 || nota > 10) {
+            printf("Error: Debe ingresar un numero entre 0 y 10\n");
         } else {
             break;
         }
-    } while (true);
+    } while (1);
+    
     return nota;
 }
 
 int main() {
     float N_1, N_2, N_3, N_4, N_5, promedio;
     
-    cout << "CALCULADORA DE PROMEDIO (5 NOTAS)\n";
-    cout << "--------------------------------\n";
+    printf("CALCULADORA DE PROMEDIO (5 NOTAS)\n");
+    printf("--------------------------------\n");
     
     N_1 = leerNotaValida(1);
     N_2 = leerNotaValida(2);
@@ -32,13 +34,12 @@ int main() {
     
     promedio = (N_1 + N_2 + N_3 + N_4 + N_5) / 5;
     
-    cout << fixed << setprecision(2);
-    cout << "\nEl promedio de las notas es: " << promedio << endl;
+    printf("\nEl promedio de las notas es: %.2f\n", promedio);
     
     if (promedio >= 6.0) {
-        cout << "Aprobado" << endl;
+        printf("Aprobado\n");
     } else {
-        cout << "Reprobado" << endl;
+        printf("Reprobado\n");
     }
     
     return 0;
