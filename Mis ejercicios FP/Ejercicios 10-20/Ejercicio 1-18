@@ -1,15 +1,11 @@
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 
 int main() {
-    int X; // Definir X como entero
-    
-    // para X desde 1 hasta 10 hacer
+    int X;
     for (X = 1; X <= 10; X++) {
         if (X % 2 == 0) {
-            cout << X << " "; // Mostrar X
+            printf("%d ", X);
         }
     }
-    
     return 0;
 }
