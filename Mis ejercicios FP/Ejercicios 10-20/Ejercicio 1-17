@@ -1,15 +1,15 @@
-#include <iostream>
-using namespace std;
-
+#include <stdio.h>
 int main() {
-    int N_1;  
-    cout << "Ingrese números (negativo para terminar):\n";
+    int N_1;
+    printf("Ingrese numeros (negativo para terminar):\n");
     
-    while (cout << "> ", cin >> N_1) {
+    while (1) {
+        printf("> ");
+        if (scanf("%d", &N_1) != 1) break;  // Si la entrada no es un número válido
+        
         if (N_1 < 0) break;
-        cout << "Número ingresado: " << N_1 << endl;
+        printf("Numero ingresado: %d\n", N_1);
     }
-    
-    cout << "Fin del programa (se ingresó un negativo o entrada inválida).\n";
+    printf("Fin del programa (se ingreso un negativo o entrada invalida).\n");
     return 0;
 }
