@@ -1,23 +1,23 @@
-#include <iostream>
-#include <string> // Para usar el tipo string
-using namespace std;
+#include <stdio.h>
+#include <string.h> // Para usar strcmp
+
+#define CONTRASENA_CORRECTA "seC01" // Contraseña definida como constante
 
 int main() {
-    const string CONTRASENA_CORRECTA = "seC01"; // Contraseña definida
-    string contrasenaIngresada;
-    bool esCorrecta = false;
+    char contrasenaIngresada[50]; // Buffer para almacenar la contraseña
+    int esCorrecta = 0; // 0 = falso, 1 = verdadero
 
-    cout << "=== Sistema de Validacion de Contraseña ===" << endl;
+    printf("=== Sistema de Validacion de Contrasena ===\n");
 
     while (!esCorrecta) {
-        cout << "Ingrese la contraseña: ";
-        cin >> contrasenaIngresada;
+        printf("Ingrese la contrasena: ");
+        scanf("%49s", contrasenaIngresada); // Lee hasta 49 caracteres
 
-        if (contrasenaIngresada == CONTRASENA_CORRECTA) {
-            esCorrecta = true;
-            cout << "¡Contraseña correcta! Acceso concedido." << endl;
+        if (strcmp(contrasenaIngresada, CONTRASENA_CORRECTA) == 0) {
+            esCorrecta = 1;
+            printf("¡Contrasena correcta! Acceso concedido.\n");
         } else {
-            cout << "Contraseña incorrecta. Intente nuevamente." << endl;
+            printf("Contrasena incorrecta. Intente nuevamente.\n");
         }
     }
 
