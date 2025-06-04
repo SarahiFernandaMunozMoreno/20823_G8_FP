@@ -1,17 +1,30 @@
 #include <stdio.h>
+
 int main() {
-    int vector[10];
+    int vector[5];
     int i;
-    for (i = 0; i < 10; i++) {
+    int suma = 0;
+
+    // Leer los valores del vector
+    for (i = 0; i < 5; i++) {
         printf("Ingrese el valor %d: ", i + 1);
         scanf("%d", &vector[i]);
     }
-    for (i = 0; i < 10; i++) {
+
+    // Calcular el cuadrado de cada elemento y sumarlos
+    for (i = 0; i < 5; i++) {
         vector[i] = vector[i] * vector[i];
+        suma += vector[i];
     }
+
+    // Imprimir el vector con los cuadrados
     printf("Vector con los cuadrados:\n");
-    for (i = 0; i < 10; i++) {
+    for (i = 0; i < 5; i++) {
         printf("%d\n", vector[i]);
     }
+
+    // Imprimir la suma de los cuadrados
+    printf("La suma de los cuadrados es: %d\n", suma);
+
     return 0;
 }
