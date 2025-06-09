@@ -1,0 +1,57 @@
+Algoritmo IntercambiarFilas
+    Definir ARREGLO_MAX Como Entero
+    ARREGLO_MAX <- 10
+    Definir n Como Entero
+    Definir i, j Como Entero
+    Definir fila_i, fila_j Como Entero
+    Definir temp Como Entero
+    Dimension mat[ARREGLO_MAX, ARREGLO_MAX]
+	
+    Escribir "Bienvenidos al programa que intercambia filas de la matriz"
+    Escribir ""
+    Escribir "Ingrese el tamaño de la matriz cuadrada (max ", ARREGLO_MAX, "): "
+    Leer n
+	
+    Si n <= 0 O n > ARREGLO_MAX Entonces
+        Escribir "Tamaño de matriz no válido."
+    Sino
+        Escribir "Ingrese los elementos de la matriz:"
+        Para i <- 0 Hasta n - 1 Hacer
+            Para j <- 0 Hasta n - 1 Hacer
+                Escribir "Elemento [", i, "][", j, "]: "
+                Leer mat[i, j]
+            Fin Para
+        Fin Para
+		
+        Escribir "Matriz original:"
+        Para i <- 0 Hasta n - 1 Hacer
+            Para j <- 0 Hasta n - 1 Hacer
+                Escribir mat[i, j], " "
+            Fin Para
+            Escribir ""
+        Fin Para
+		
+        Escribir "Ingrese el índice de la fila i: "
+        Leer fila_i
+        Escribir "Ingrese el índice de la fila j: "
+        Leer fila_j
+		
+        Si fila_i < 0 O fila_i >= n O fila_j < 0 O fila_j >= n Entonces
+            Escribir "Índices de fila no válidos."
+        Sino
+            Para j <- 0 Hasta n - 1 Hacer
+                temp <- mat[fila_i, j]
+                mat[fila_i, j] <- mat[fila_j, j]
+                mat[fila_j, j] <- temp
+            Fin Para
+			
+            Escribir "Matriz modificada:"
+            Para i <- 0 Hasta n - 1 Hacer
+                Para j <- 0 Hasta n - 1 Hacer
+                    Escribir mat[i, j], " "
+                Fin Para
+                Escribir ""
+            Fin Para
+        Fin Si
+    Fin Si
+FinAlgoritmo
