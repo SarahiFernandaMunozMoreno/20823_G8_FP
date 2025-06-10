@@ -4,7 +4,7 @@
 //El sistema debe solicitar al usuario dos números enteros (n_1 y n_2).
 //El sistema debe buscar ambos números en el vector y actualizar las banderas correspondientes si los encuentra.
 //El sistema debe mostrar un mensaje indicando si:
-// Ambos números están en el vector
+//Ambos números están en el vector
 //Solo el primer número está en el vector
 //Solo el segundo número está en el vector.
 //Ninguno de los números está en el vector.
