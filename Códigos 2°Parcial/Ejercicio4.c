@@ -1,5 +1,9 @@
 #include <stdio.h>
 int main() {
+//El sistema debe permitir al usuario ingresar 10 valores enteros y almacenarlos en un vector.
+//El sistema debe ordenar los números en orden descendente (de mayor a menor).
+//El sistema debe imprimir el vector ordenado en formato lista.
+//El algoritmo de ordenamiento debe ser eficiente para entradas pequeñas
     int i;
     int j;
     int temp;
