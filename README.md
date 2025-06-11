@@ -7,7 +7,7 @@ Este repositorio contiene documentos, Codigos C y PSe Int de Fundamentos de Prog
 
 - [🔢 Talleres](./Unidades/Unidad_2/Talleres/)
 - [🧪 Proyecto](./Proyectos/)
-- [📖 Documentos](./Documentos/)
+- [👽 Codigos](./Codigos/)
 
 ## ✍️ Contribuciones
 
