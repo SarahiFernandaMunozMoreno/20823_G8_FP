@@ -1,7 +1,7 @@
 # 📚 Repositorio de Documentos Académicos 
 # NRC: # 20823_G8_FP
 
-Este repositorio contiene documentos, Codigos C y PSe Int de Fundamentos de Programación.
+### Este repositorio contiene documentos, Codigos C y PSe Int de Fundamentos de Programación.
 
 ## 📂 Contenido
 
@@ -9,9 +9,9 @@ Este repositorio contiene documentos, Codigos C y PSe Int de Fundamentos de Prog
 - [🧪 Proyecto](./Proyectos/)
 - [👽 Codigos](./Codigos/)
 
-## ✍️ Contribuciones
+## ✍️ Contribuidores
 
-* Astudillo Adriana
-* Muñoz Sarahi
-* Nero Alan
+### * Astudillo Adriana
+### * Muñoz Sarahi
+### * Nero Alan
 
