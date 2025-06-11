@@ -12,7 +12,7 @@ int main() {
 	int j;
 	int mat[ARREGLO_MAX][ARREGLO_MAX];
 	int max;
-int fila_i;
+	int fila_i;
 	max = 10;
     printf("Bienvenidos al programa que te dira el valor maximo de una fila \n\n");
     // GENERA LA MATRIZ MxN
