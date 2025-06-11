@@ -22,7 +22,7 @@ int matriz[F][C];
 for(i = 0; i < F; i++) {
     for(j = 0; j < C; j++) {
         printf("Ingrese los datos de su matriz [%d][%d]: ", i, j);
-         scanf("%d", matriz[i][j]);
+         scanf("%d", & matriz[i][j]);
         }
     }
 // RF3
