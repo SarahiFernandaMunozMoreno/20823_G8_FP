@@ -1,6 +1,6 @@
 #include <stdio.h>
 #define max
-//RF1:El programa debera pedir el ingreso de filas y columnas de tamaño de su matriz
+//RF1:El programa debera pedir el ingreso de filas y columnas de tamaÃ±o de su matriz
 //RF2:El programa pedira ingresar los datos de su matriz
 //RF3:El programa debera pedir la fila de la cual decee analizar el maximo
 //RF4:El programa debe mostrar el valor maximo de dicha fila
