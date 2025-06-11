@@ -1,4 +1,10 @@
 Algoritmo JuegoAdivinanza
+//Requisitos funcionales del juego:
+//Generar una matriz cuadrada de tama o fijo 10x10.
+//Llenar la matriz con valores ingresados por el usuario.
+//Calcular la suma total de los elementos de la matriz.
+//Pedir al jugador que adivine cu l es la suma total.
+//Informar si el jugador acert  o no, mostrando la suma correcta si falla.
     Definir ARREGLO_MAX Como Entero
     ARREGLO_MAX <- 100
     Definir c,f,i,j,max,suma,mat, intento Como Entero
