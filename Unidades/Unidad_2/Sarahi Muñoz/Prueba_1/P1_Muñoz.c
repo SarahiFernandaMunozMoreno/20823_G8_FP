@@ -27,5 +27,5 @@ for(i = 0; i < F; i++) {
     }
 // RF3
 int max;
-printf("Ingrese la fila que desea analizar (0 a %d): ", F - 1);
+printf("Ingrese la fila que desea analizar (%d): ", F - 1);
 scanf("%d", max);
