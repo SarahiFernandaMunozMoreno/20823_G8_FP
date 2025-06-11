@@ -12,10 +12,10 @@ int matriz[F][C];
 }
 // RF1
 printf(" Ingrese el numero de filas : ") ;
-scanf(" %d " , " F ");
+scanf(" %d " , &F );
 
 printf(" Ingrese el numero de columnas : ") ;
-scanf("%d","C");
+scanf("%d",&C);
 int matriz[F][C];
 
 // RF2
@@ -28,4 +28,4 @@ for(i = 0; i < F; i++) {
 // RF3
 int max;
 printf("Ingrese la fila que desea analizar (%d): ", F - 1);
-scanf("%d", max);
+scanf("%d",&max);
