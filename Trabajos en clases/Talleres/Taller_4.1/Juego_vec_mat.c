@@ -5,7 +5,7 @@
 #define JUGADOR1 '*'
 #define JUGADOR2 '#'
 // Función para imprimir el tablero
-printf("\n");
+printf("Bienvenidos a este juego \n");
 void imprimirTablero(char tablero[FILAS][COLUMNAS]) {
     for (int i = 0; i < FILAS; i++) {
         for (int j = 0; j < COLUMNAS; j++) {
