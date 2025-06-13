@@ -1,46 +1,30 @@
 #include <stdio.h>
-#include <stdbool.h>  
-// El sistema debe inicializar un vector de tamaño 15 con valores del 1 al 14.
-//El sistema debe solicitar al usuario dos números enteros (n_1 y n_2).
-//El sistema debe buscar ambos números en el vector y actualizar las banderas correspondientes si los encuentra.
-//El sistema debe mostrar un mensaje indicando si:
-//Ambos números están en el vector
-//Solo el primer número está en el vector
-//Solo el segundo número está en el vector.
-//Ninguno de los números está en el vector.
-
-#define SIZE 15  
-
+#include <limits.h> // Para INT_MAX
+//El sistema debe almacenar números enteros del 1 al 15 en un arreglo (Vec).
+//El sistema debe calcular el factorial de cada número en Vec y almacenarlo en otro
+arreglo (Fact).
+//El sistema debe imprimir una tabla con dos columnas: Número y Factorial, formateada
+para alinear los valores.
+//El sistema debe usar el tipo unsigned long long para evitar desbordamiento en
+factoriales grandes.
 int main() {
-    int vec[SIZE];    
-    int n_1, n_2;    
-    bool bandera_n_1 = false;  
-    bool bandera_n_2 = false;  
+ const int n = 15;
+ int Vec[n];
 
-    for (int i = 1; i <= 14; i++) {
-        vec[i] = i;
-    }
-    printf("Ingrese el primer número a buscar: ");
-    scanf("%d", &n_1);
-    printf("Ingrese el segundo número a buscar: ");
-    scanf("%d", &n_2);
-    for (int i = 1; i <= 14; i++) {
-        if (vec[i] == n_1) {
-            bandera_n_1 = true;
-        }
-        if (vec[i] == n_2) {
-            bandera_n_2 = true;
-        }
-    }
-    if (bandera_n_1 && bandera_n_2) {
-        printf("Ambos números están en el vector\n");
-    } else if (bandera_n_1) {
-        printf("Solo el primer número está en el vector\n");
-    } else if (bandera_n_2) {
-        printf("Solo el segundo número está en el vector\n");
-    } else {
-        printf("Ninguno de los números está en el vector\n");
-    }
-
-    return 0;
+unsigned long long Fact[n];
+ for(int i = 0; i < n; i++) {
+ Vec[i] = i + 1;
+ }
+ for(int i = 0; i < n; i++) {
+ Fact[i] = 1;
+ for(int j = 1; j <= Vec[i]; j++) {
+ Fact[i] *= j;
+ }
+ }
+ printf("Número | Factorial\n");
+ printf("------------------\n");
+ for(int i = 0; i < n; i++) {
+ printf("%6d | %20llu\n", Vec[i], Fact[i]);
+ }
+ return 0;
 }
