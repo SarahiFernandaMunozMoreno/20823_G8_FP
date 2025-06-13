@@ -3,7 +3,8 @@
 //R_1:El sistema debe inicializar un vector de tamaño 15 con valores del 1 al 14.
 //R_2:El sistema debe solicitar al usuario dos números enteros (n_1 y n_2).
 //R_3:El sistema debe buscar ambos números en el vector y actualizar las banderas correspondientes si los encuentra.
-//R_4:El sistema debe mostrar un mensaje indicando si: Ambos números están en el vector, Solo el primer número está en el vector,Solo el segundo número está en el vector, Ninguno de los números está en el vector.
+//R_4:El sistema debe mostrar un mensaje indicando si: Ambos números están en el vector, Ninguno de los números está en el vector.
+//R_5:El sistema debe mostrar un mensaje indicando si:Solo el primer número está en el vector, Solo el segundo número está en el vector,
     
 #define SIZE 15  
 
