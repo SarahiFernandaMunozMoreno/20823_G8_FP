@@ -137,7 +137,7 @@ int main() {
 
             case 6:
                 printf("\nSaliendo del programa... ¡Hasta pronto!\n");
-                printf("\nElaborado por el grupo 8: Sara Munoz, Alan Nero, Adriana Astudillo\n");
+                printf("\nElaborado por el grupo 8: Adriana Astudillo, Sara Munoz, Alan Nero, \n");
                 break;
 
             default:
