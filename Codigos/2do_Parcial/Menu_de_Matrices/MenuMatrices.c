@@ -53,7 +53,7 @@ int main() {
         printf("===== MENU =====\n");
         printf("1. Suma de matrices\n");
         printf("2. Resta de matrices\n");
-        printf("3. Multiplicación de matrices\n");
+        printf("3. Multiplicacion de matrices\n");
         printf("4. Potencia de la primera matriz\n");
         printf("5. Potencia de la segunda matriz\n");
         printf("6. Salir\n");
@@ -90,7 +90,7 @@ int main() {
                                 resultado[i][j] += matriz1[i][k] * matriz2[k][j];
                         }
 
-                    printf("\nResultado de la multiplicación:\n");
+                    printf("\nResultado de la multiplicacion:\n");
                     imprimirMatriz(resultado, filas, columnas);
                 }
                 break;
