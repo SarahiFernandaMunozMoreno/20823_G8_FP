@@ -8,7 +8,8 @@
 
 void imprimirMatriz(float matriz[MAX][MAX], 
 int filas, 
-int columnas) {
+int columnas),
+ {
     int i, j;
     for (i = 0; i < filas; ++i) {
         for (j = 0; j < columnas; ++j) {
