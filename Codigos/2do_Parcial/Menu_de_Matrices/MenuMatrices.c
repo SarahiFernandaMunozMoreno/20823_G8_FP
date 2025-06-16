@@ -6,7 +6,9 @@
 	/* Calcular la suma, resta, multiplicacion y potenciacion de las matrices. */
 	/* Presentar los resultados de las operaciones. */
 
-void imprimirMatriz(float matriz[MAX][MAX], int filas, int columnas) {
+void imprimirMatriz(float matriz[MAX][MAX], 
+int filas, 
+int columnas) {
     int i, j;
     for (i = 0; i < filas; ++i) {
         for (j = 0; j < columnas; ++j) {
