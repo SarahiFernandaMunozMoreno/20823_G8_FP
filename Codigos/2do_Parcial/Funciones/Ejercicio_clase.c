@@ -16,7 +16,7 @@ int main() {
     scanf("%d", &n);
 
     if (n <= 0 || n > ARREGLO_MAX) {
-        printf("Tamano no válido. Debe ser entre 1 y %d.\n", ARREGLO_MAX);
+        printf("Tamano no valido. Debe ser entre 1 y %d.\n", ARREGLO_MAX);
         return 1;
     }
 
