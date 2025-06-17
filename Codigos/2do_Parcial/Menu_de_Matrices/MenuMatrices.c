@@ -22,9 +22,9 @@ int main() {
     float matriz1[MAX][MAX], matriz2[MAX][MAX];
     float resultado[MAX][MAX], temp[MAX][MAX];
 
-    printf("Ingrese el numero de filas (máximo %d): ", MAX);
+    printf("Ingrese el numero de filas (maximo %d): ", MAX);
     scanf("%d", &filas);
-    printf("Ingrese el numero de columnas (máximo %d): ", MAX);
+    printf("Ingrese el numero de columnas (maximo %d): ", MAX);
     scanf("%d", &columnas);
 
     if (filas < 1 || filas > MAX || columnas < 1 || columnas > MAX) {
@@ -57,7 +57,7 @@ int main() {
         printf("4. Potencia de la primera matriz\n");
         printf("5. Potencia de la segunda matriz\n");
         printf("6. Salir\n");
-        printf("Ingrese su opción: ");
+        printf("Ingrese su opcion: ");
         scanf("%d", &opcion);
 
         switch (opcion) {
