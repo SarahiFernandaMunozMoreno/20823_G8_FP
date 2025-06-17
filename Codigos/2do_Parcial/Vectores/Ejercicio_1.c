@@ -8,7 +8,7 @@ int main() {
     int n;
     int vec[MAX];
     int k, VK;
-    printf("¿Cuántos términos de la sucesión deseas generar? (1-%d): ", MAX);
+    printf("Ingrese los términos de la sucesión se desea generar? (1-%d): ", MAX);
     scanf("%d", &n);
     if (n > MAX || n <= 0) {
         printf("Error: Debes ingresar un número entre 1 y %d\n", MAX);
