@@ -22,9 +22,9 @@ int main() {
     float matriz1[MAX][MAX], matriz2[MAX][MAX];
     float resultado[MAX][MAX], temp[MAX][MAX];
 
-    printf("Ingrese el número de filas (máximo %d): ", MAX);
+    printf("Ingrese el numero de filas (máximo %d): ", MAX);
     scanf("%d", &filas);
-    printf("Ingrese el número de columnas (máximo %d): ", MAX);
+    printf("Ingrese el numero de columnas (máximo %d): ", MAX);
     scanf("%d", &columnas);
 
     if (filas < 1 || filas > MAX || columnas < 1 || columnas > MAX) {
