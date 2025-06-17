@@ -8,10 +8,10 @@ int main() {
     int n;
     int vec[MAX];
     int k, VK;
-    printf("Ingrese los terminos de la sucesión se desea generar? (1-%d): ", MAX);
+    printf("Ingrese los terminos de la sucesion se desea generar? (1-%d): ", MAX);
     scanf("%d", &n);
     if (n > MAX || n <= 0) {
-        printf("Error: Debes ingresar un número entre 1 y %d\n", MAX);
+        printf("Error: Debes ingresar un numero entre 1 y %d\n", MAX);
         return 1;
     }
     for (int posicion = 0; posicion < n; posicion++) {
@@ -19,9 +19,9 @@ int main() {
         VK = k * k + 3;
         vec[posicion] = VK;
     }
-    printf("\nLos primeros %d términos de la sucesión son:\n", n);
+    printf("\nLos primeros %d terminos de la sucesion son:\n", n);
     for (int posicion = 0; posicion < n; posicion++) {
-        printf("Término %d: %d\n", posicion + 1, vec[posicion]);
+        printf("Termino %d: %d\n", posicion + 1, vec[posicion]);
     }
 
     return 0;
