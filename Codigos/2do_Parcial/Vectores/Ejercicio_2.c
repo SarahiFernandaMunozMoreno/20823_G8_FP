@@ -32,11 +32,11 @@ int main() {
     if (bandera_n_1 && bandera_n_2) {
         printf("Ambos numeros están en el vector\n");
     } else if (bandera_n_1) {
-        printf("Solo el primer numero está en el vector\n");
+        printf("Solo el primer numero esta en el vector\n");
     } else if (bandera_n_2) {
-        printf("Solo el segundo numero está en el vector\n");
+        printf("Solo el segundo numero esta en el vector\n");
     } else {
-        printf("Ninguno de los numeros está en el vector\n");
+        printf("Ninguno de los numeros esta en el vector\n");
     }
 
     return 0;
