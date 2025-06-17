@@ -18,7 +18,7 @@ unsigned long long Fact[n];
  Fact[i] *= j;
  }
  }
- printf("Número | Factorial\n");
+ printf("Numero | Factorial\n");
  printf("------------------\n");
  for(int i = 0; i < n; i++) {
  printf("%6d | %20llu\n", Vec[i], Fact[i]);
