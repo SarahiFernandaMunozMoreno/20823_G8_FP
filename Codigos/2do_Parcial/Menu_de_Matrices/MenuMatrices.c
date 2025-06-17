@@ -3,7 +3,7 @@
 	/* Requisitos funcionales del programa: */
 	/* Generar una matriz MxN. */
 	/* Llenar la matriz con valores ingresados por el usuario. */
-	/* Calcular la suma, resta, multiplicacion y potenciacion de las matrices. */
+	/* Calcular la suma, resta, multiplicación y potenciación de las matrices. */
 	/* Presentar los resultados de las operaciones. */
 
 void imprimirMatriz(float matriz[MAX][MAX], 
