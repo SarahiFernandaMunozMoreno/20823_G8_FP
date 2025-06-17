@@ -17,9 +17,9 @@ int main() {
     for (int i = 1; i <= 14; i++) {
         vec[i] = i;
     }
-    printf("Ingrese el primer número a buscar: ");
+    printf("Ingrese el primer numero a buscar: ");
     scanf("%d", &n_1);
-    printf("Ingrese el segundo número a buscar: ");
+    printf("Ingrese el segundo numero a buscar: ");
     scanf("%d", &n_2);
     for (int i = 1; i <= 14; i++) {
         if (vec[i] == n_1) {
@@ -30,13 +30,13 @@ int main() {
         }
     }
     if (bandera_n_1 && bandera_n_2) {
-        printf("Ambos números están en el vector\n");
+        printf("Ambos numeros están en el vector\n");
     } else if (bandera_n_1) {
-        printf("Solo el primer número está en el vector\n");
+        printf("Solo el primer numero está en el vector\n");
     } else if (bandera_n_2) {
-        printf("Solo el segundo número está en el vector\n");
+        printf("Solo el segundo numero está en el vector\n");
     } else {
-        printf("Ninguno de los números está en el vector\n");
+        printf("Ninguno de los numeros está en el vector\n");
     }
 
     return 0;
