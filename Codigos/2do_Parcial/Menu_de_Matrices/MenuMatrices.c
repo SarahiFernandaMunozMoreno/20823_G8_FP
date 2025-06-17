@@ -49,7 +49,7 @@ int main() {
     }
 
     do {
-        printf("\nBienvenidos este progrma realiza operaciones de matriz\n");
+        printf("\nBienvenidos este programa realiza operaciones de matriz\n");
         printf("===== MENU =====\n");
         printf("1. Suma de matrices\n");
         printf("2. Resta de matrices\n");
@@ -105,7 +105,7 @@ int main() {
                     scanf("%d", &potencia);
 
                     if (potencia < 1) {
-                        printf("Potencia no válida.\n");
+                        printf("Potencia no valida.\n");
                         break;
                     }
 
@@ -141,7 +141,7 @@ int main() {
                 break;
 
             default:
-                printf("Opción inválida. Intente de nuevo.\n");
+                printf("Opción invalida. Intente de nuevo.\n");
         }
 
     } while (opcion != 6);
