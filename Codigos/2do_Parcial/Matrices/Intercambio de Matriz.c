@@ -44,7 +44,7 @@ int main() {
         return 1;
     }
     if (fila_i == fila_j) {
-        printf("Las filas son iguales. No se realizo ningún intercambio.\n");
+        printf("Las filas son iguales. No se realizo ningun intercambio.\n");
         return 0;
     }
     // Intercambiar las filas
