@@ -10,7 +10,7 @@
 - [🧪 Proyecto](./Proyectos/)
 - [👽 Codigos](./Codigos/)
 - [🫂 Colaboradores](./Unidades/)
-- [🎲 Documento](./Documentos/)
+- [🎲 Documentos](./Documentos/)
 
 
 ## ✍️ Contribuidores
