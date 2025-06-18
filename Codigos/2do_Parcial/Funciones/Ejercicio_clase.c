@@ -76,6 +76,6 @@ int main() {
 }
 //NRC: #20823_G8_FP
 //Colaboradores
-* Astudillo Adriana
-* Muñoz Sarahi
-* Nerón Alan
+//Astudillo Adriana
+//Muñoz Sarahi
+//Nerón Alan
