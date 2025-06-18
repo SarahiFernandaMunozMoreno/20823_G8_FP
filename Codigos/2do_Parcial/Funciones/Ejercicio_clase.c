@@ -78,4 +78,4 @@ int main() {
 //Colaboradores
 //Astudillo Adriana
 //Muñoz Sarahi
-//Nerón Alan
+//Nero Alan
