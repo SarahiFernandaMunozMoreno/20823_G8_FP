@@ -22,11 +22,12 @@ for (i=n-1; i>=1; --i) {
 for (j=n-1; j>=1; --j) {
 printf("%f\n", mat[i-1][j-1]);
 }
+
+}
+return 0;
+}
 //NRC: #20823_G8_FP
 //Colaboradores
 //Astudillo Adriana
 //Muñoz Sarahi
 //Nero Alan
-}
-return 0;
-}
