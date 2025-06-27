@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-//RF2.1 – debe generar un número aleatorio entre 1 y 100.
-//RF2.2 – debe permitir hasta 5 intentos mediante un ciclo 'for'.
-//RF2.3 – debe indicar si el intento es correcto, bajo o alto.
-//RF2.4 – Al final del juego, debe mostrar todos los intentos realizados.
-//RF2.5 – Mostrar un mensaje secreto si el jugador adivina el número correctamente
+//RF2.1 â€“ debe generar un nÃºmero aleatorio entre 1 y 100.
+//RF2.2 â€“ debe permitir hasta 5 intentos mediante un ciclo 'for'.
+//RF2.3 â€“ debe indicar si el intento es correcto, bajo o alto.
+//RF2.4 â€“ Al final del juego, debe mostrar todos los intentos realizados.
+//RF2.5 â€“ Mostrar un mensaje secreto si el jugador adivina el nÃºmero correctamente
 
 int main() {
     int numeroSecreto, intento;
@@ -30,8 +30,8 @@ int main() {
 
 // RF2.3
         if (intento == numeroSecreto) {
-            printf(" ¡Correcto! Adivinaste el número.\n");
-            printf(" Mensaje secreto: ¡Felicidades, eres un adivinador experto!\n");
+            printf(" Â¡Correcto! Adivinaste el nÃºmero.\n");
+            printf(" Mensaje secreto: Â¡Felicidades, eres un adivinador experto!\n");
 // RF2.5
             acierto = 1;
             break;
