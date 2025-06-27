@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1751028263 source:c:\users\g300\downloads\juegofun\main.c
+	<stdio.h>
+	"mimath.h"
+
+1751028348 c:\users\g300\downloads\juegofun\mimath.h
+
+1751028124 source:c:\users\g300\downloads\juegofun\mimath.c
+	"mimath.h"
+
