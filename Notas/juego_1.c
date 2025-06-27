@@ -1,6 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h> //Lbreria de Gestion de tiempos
+#include <stdio.h> // Libreria para entrada y salida de datos
+#include <stdlib.h> // Libreria proporciona memoria dinámica
+#include <time.h> //Libreria de Gestion de tiempos
 
 #define MAX_INTENTOS 5
 
