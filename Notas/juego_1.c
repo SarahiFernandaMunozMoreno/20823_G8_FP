@@ -13,7 +13,9 @@ int main() {
     srand(time(NULL));
     num_sec = rand() % 100 + 1;
     printf(" Bienvenido al juego Adivina el Numero (1 a 100)\n");
+    
     printf(" Tienes 5 intentos para adivinarlo\n");
+    
     // Solicitar intentos del ciclo for
     for (i = 0; i < MAX_INTENTOS; i++) {
         printf("Intento %d: Ingresa un numero: ", i + 1);
