@@ -1,36 +1,49 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<stdbool.h>
+#include <stdio.h> // Libreria para entrada y salida de datos
+#include <stdlib.h> // Libreria proporciona memoria dinámica
+#include <time.h> //Libreria de Gestion de tiempos
+
+#define MAX_INTENTOS 5
+
 int main() {
-	bool acierto;
-	int intento;
-	int n_s;
-	int n_u;
-	/* Generar un número secreto aleatorio entre 1 y 100 */
-	n_s = (rand()%100)+1;
-	acierto = false;
-	/* Dar 5 intentos al usuario */
-	for (intento=1; intento<=5; ++intento) {
-		printf("Intento %i: Ingrese un numero entre 1 y 100\n", intento);
-		scanf("%i", &n_u);
-		/* Verificar si el número adivinado es correcto */
-		if (n_u==n_s) {
-			printf("¡Felicidades! Has adivinado el numero secreto\n");
-			acierto = true;
-			intento = 6;
-			/* para salir del bucle */
-		} else {
-			/* Dar una pista al usuario */
-			if (n_u<n_s) {
-				printf("El numero secreto es mayor que %i\n", n_u);
-			} else {
-				printf("El numero secreto es menor que %i\n", n_u);
-			}
-		}
-	}
-	/* Si el usuario no adivinó el número secreto en 5 intentos */
-	if (acierto==false) {
-		printf("Lo siento, no has adivinado el numero secreto. El numero secreto era %i\n", n_s);
-	}
-	return 0;
+    int num[MAX_INTENTOS];
+    int num_sec, intento;
+    int i;
+
+    // Número aleatorio entre 1 y 100
+    srand(time(NULL));
+    num_sec = rand() % 100 + 1;
+
+    printf("=== Bienvenido al juego Adivina el Numero ===\n");
+    printf("El numero está entre 1 y 100\n");
+    printf("Tienes 5 intentos para adivinarlo... ¡Buena Suerte!\n");
+
+    // Solicitar intentos del ciclo for
+    for (i = 0; i < MAX_INTENTOS; i++) {
+        printf("\nIntento %d: \nIngresa un numero: ", i + 1);
+        scanf("%d", &intento);
+        num[i] = intento;
+
+    // Mensaje secreto al adivinar
+        if (intento == num_sec) {
+            printf("Felicidades Adivinaste el numero secreto.\n");
+            printf("Eres un gran jugador.\n");
+            break;
+    // Validacion de Intentos
+        } else if (intento < num_sec) {
+            printf("Demasiado bajo.\n");
+        } else {
+            printf("Demasiado alto.\n");
+        }
+    }
+    // Mostrar los intentos realizados
+    printf("\nTus intentos fueron: ");
+    for (int j = 0; j <= i; j++) {
+        printf("%d ", num[j]);
+    }
+
+    // Mostrar el número secreto al final del juego
+    printf("\nEl numero secreto era: %d\n", num_sec);
+
+    return 0;
+
 }
