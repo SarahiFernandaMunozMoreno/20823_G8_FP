@@ -47,5 +47,5 @@ int main() {
     return 0;
 
 }
-//* Integrantes: Adriana Astudillo, Sarahi Muñoz, Alan Nero.
+//* Creditos: Adriana Astudillo, Sarahi Muñoz, Alan Nero.
 //* NRC: 20823
