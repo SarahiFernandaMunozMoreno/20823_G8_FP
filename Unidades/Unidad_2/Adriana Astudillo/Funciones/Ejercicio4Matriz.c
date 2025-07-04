@@ -3,30 +3,32 @@
 #include <time.h>
 
 #define MAX 10
-
-// *RF1:Declaración de funciones
+//RF1:Generar una matriz cuadrada de n<=10.
+//RF2:Solicita las filas a intercambiar.
+//RF3:Imprime la matriz original y la matriz intercambiada
+// *Funciones
 void gen(int m[MAX][MAX], int n);
 void ver(int m[MAX][MAX], int n);
 void swap(int m[MAX][MAX], int n, int f1, int f2);
 int valido(int n);
 int pedirFila(const char* msg, int max);
-
+//*RF1
 int main() {
-    srand(time(NULL));  // Inicializa números aleatorios
+    srand(time(NULL));  // Inicializa nÃºmeros aleatorios
 
     int n;
     int m[MAX][MAX];
 
     printf("Tamano de la matriz (maximo %d): ", MAX);
     if (scanf("%d", &n) != 1 || !valido(n)) {
-        printf("tamaño fuera de rango (1 a %d).\n", MAX);
+        printf("tamaÃ±o fuera de rango (1 a %d).\n", MAX);
         return 1;
     }
 
     gen(m, n);
     printf("\nMatriz generada:\n");
     ver(m, n);
-
+//*RF2
     int f1 = pedirFila("Fila 1 (1 a %d): ", n);
     int f2 = pedirFila("Fila 2 (1 a %d): ", n);
 
@@ -51,7 +53,7 @@ void gen(int m[MAX][MAX], int n) {
             m[i][j] = rand() % 99 + 1;
 }
 
-// *RF3:Muestra matriz
+// *RF3
 void ver(int m[MAX][MAX], int n) {
     for (int i = 0; i < n; i++) {
         printf("    ");
@@ -61,7 +63,7 @@ void ver(int m[MAX][MAX], int n) {
     }
 }
 
-// Intercambia dos filas
+// *RF2
 void swap(int m[MAX][MAX], int n, int f1, int f2) {
     for (int j = 0; j < n; j++) {
         int tmp = m[f1][j];
@@ -70,18 +72,18 @@ void swap(int m[MAX][MAX], int n, int f1, int f2) {
     }
 }
 
-// Verifica si el tamaño es válido
+// Verifica si el tamaÃ±o es vÃ¡lido
 int valido(int n) {
     return n > 0 && n <= MAX;
 }
 
-// Pide número de fila al usuario
+// *RF3: Pide nÃºmero de fila al usuario
 int pedirFila(const char* msg, int max) {
     int f;
     do {
         printf(msg, max);
         if (scanf("%d", &f) != 1) {
-            printf("Entrada inválida.\n");
+            printf("Entrada invÃ¡lida.\n");
             exit(1);
         }
         if (f < 1 || f > max)
