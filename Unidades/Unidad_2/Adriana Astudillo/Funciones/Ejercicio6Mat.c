@@ -1,6 +1,9 @@
 #include <stdio.h>
 #define MAX 10
-
+//RF1: Generar una matriz mxn.
+//RF2: Llenar la matriz con valores ingresados por el usuario.
+//RF3: Solicita la fila a consultar.
+//RF4: Imprime la matriz original y el valor maximo de la fila
 //*Funciones
 void gen(int m[][MAX], int f, int c);
 void imp(int m[][MAX], int f, int c);
@@ -12,12 +15,12 @@ int main() {
     int fila, max;
 
     printf("Programa para mostrar el valor maximo de una fila\n\n");
-//*RF1: el usuario escoge la dimención
+//*RF1: el usuario escoge la dimenciÃ³n
     printf("Ingrese numero de filas: ");
     scanf("%d", &f);
     printf("Ingrese numero de columnas: ");
     scanf("%d", &c);
-//validación de dimención
+//validaciÃ³n de dimenciÃ³n
     if (f > MAX || c > MAX || f <= 0 || c <= 0) {
         printf("Dimensiones invalidas.\n");
         return 1;
@@ -25,12 +28,12 @@ int main() {
 
     gen(m, f, c);
     imp(m, f, c);
-
+//*RF3
     printf("\nIngrese la fila a consultar (1 a %d): ", f);
     scanf("%d", &fila);
 
     if (fila >= 1 && fila <= f) {
-        max = maxFila(m, fila - 1, c); // Convertir a índice 0
+        max = maxFila(m, fila - 1, c); // Convertir a Ã­ndice 0
         printf("El valor maximo de la fila %d es: %d\n", fila, max);
     } else {
         printf("Fila fuera de rango.\n");
@@ -49,7 +52,7 @@ void gen(int m[][MAX], int f, int c) {
         }
     }
 }
-//*RF3: imprime la matriz
+//*RF4: imprime la matriz
 void imp(int m[][MAX], int f, int c) {
     int i, j;
     printf("\nMatriz ingresada:\n");
@@ -60,7 +63,7 @@ void imp(int m[][MAX], int f, int c) {
         printf("\n");
     }
 }
-//*RF4: busca el max
+
 int maxFila(int m[][MAX], int fila, int c) {
     int j, max = m[fila][0];
     for (j = 1; j < c; j++) {
