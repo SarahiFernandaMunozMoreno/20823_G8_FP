@@ -8,7 +8,7 @@ void agregar() {
         printf("No se pudo abrir el fichero.\n");
         return;
     }
-
+    //Ingresar datos de contacto
     char nombre[50];
     char telefono[20];
     char correo[50];
@@ -31,25 +31,20 @@ void agregar() {
     fclose(f);
     printf("Registro agregado.\n");
 }
-
 void listar() {
     FILE *f = fopen("agenda.txt", "r");
     if (f == NULL) {
         printf("No se pudo abrir el fichero.\n");
         return;
     }
-
     char nombre[50], telefono[20], correo[50], callePrincipal[50], calleSecundaria[50];
     printf("Registros:\n");
-
     while (fscanf(f, "%s %s %s %s %s", nombre, telefono, correo, callePrincipal, calleSecundaria) == 5) {
         printf("Nombre: %s\nTelefono: %s\nCorreo: %s\nCalle Principal: %s\nCalle Secundaria: %s\n",
                nombre, telefono, correo, callePrincipal, calleSecundaria);
     }
-
     fclose(f);
 }
-
 void actualizar() {
     FILE *f = fopen("agenda.txt", "r");
     FILE *temp = fopen("temp.txt", "w");
@@ -57,14 +52,11 @@ void actualizar() {
         printf("Error al abrir ficheros.\n");
         return;
     }
-
     char nombre[50], telefono[20], correo[50], callePrincipal[50], calleSecundaria[50];
     char nombreBuscado[50];
     int encontrado = 0;
-
     printf("Nombre a actualizar: ");
     scanf("%s", nombreBuscado);
-
     while (fscanf(f, "%s %s %s %s %s", nombre, telefono, correo, callePrincipal, calleSecundaria) == 5) {
         if (strcmp(nombre, nombreBuscado) == 0) {
             printf("Nuevo Telefono: ");
@@ -79,7 +71,6 @@ void actualizar() {
         }
         fprintf(temp, "%s %s %s %s %s\n", nombre, telefono, correo, callePrincipal, calleSecundaria);
     }
-
     fclose(f);
     fclose(temp);
     remove("agenda.txt");
@@ -90,7 +81,6 @@ void actualizar() {
     else
         printf("Registro no encontrado.\n");
 }
-
 void eliminar() {
     FILE *f = fopen("agenda.txt", "r");
     FILE *temp = fopen("temp.txt", "w");
@@ -98,14 +88,11 @@ void eliminar() {
         printf("Error al abrir ficheros.\n");
         return;
     }
-
     char nombre[50], telefono[20], correo[50], callePrincipal[50], calleSecundaria[50];
     char nombreBuscado[50];
     int encontrado = 0;
-
     printf("Nombre a eliminar: ");
     scanf("%s", nombreBuscado);
-
     while (fscanf(f, "%s %s %s %s %s", nombre, telefono, correo, callePrincipal, calleSecundaria) == 5) {
         if (strcmp(nombre, nombreBuscado) != 0) {
             fprintf(temp, "%s %s %s %s %s\n", nombre, telefono, correo, callePrincipal, calleSecundaria);
@@ -113,7 +100,6 @@ void eliminar() {
             encontrado = 1;
         }
     }
-
     fclose(f);
     fclose(temp);
     remove("agenda.txt");
@@ -124,7 +110,6 @@ void eliminar() {
     else
         printf("Registro no encontrado.\n");
 }
-
 int main() {
     int opcion;
     do {
@@ -136,7 +121,6 @@ int main() {
         printf("0. Salir\n");
         printf("Opcion: ");
         scanf("%d", &opcion);
-
         switch (opcion) {
             case 1: agregar(); break;
             case 2: listar(); break;
@@ -146,6 +130,5 @@ int main() {
             default: printf("Opcion no válida.\n");
         }
     } while (opcion != 0);
-
     return 0;
 }
