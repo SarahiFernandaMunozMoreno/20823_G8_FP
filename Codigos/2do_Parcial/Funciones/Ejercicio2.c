@@ -37,6 +37,8 @@ void mostrarMatrizInversa(int N, int Mat[N][N]) {
         printf("\n");
     }
 }
+/*Colaboradores:Astudillo Adriana, Muñoz Sarahi, Nero Alan */
+/*NRC:20823*/
 //NRC: #20823_G8_FP
 //Colaboradores
 //Astudillo Adriana
