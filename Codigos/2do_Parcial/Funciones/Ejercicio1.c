@@ -74,3 +74,5 @@ int main() {
 
     return 0;
 }
+/*Colaboradores:Astudillo Adriana, Muñoz Sarahi, Nero Alan */
+/*NRC:20823*/
