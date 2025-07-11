@@ -46,7 +46,7 @@ int main() {
     return 0;
 }
 
-// Funci�n para llenar la matriz con datos del usuario
+// Función para llenar la matriz con datos del usuario
 void generarMatriz(int mat[][ARREGLO_MAX], int f, int c) {
     int i, j;
     printf("Ingrese los elementos de la matriz por filas:\n");
@@ -58,7 +58,7 @@ void generarMatriz(int mat[][ARREGLO_MAX], int f, int c) {
     }
 }
 
-// Funci�n para imprimir la matriz
+// Función para imprimir la matriz
 void imprimirMatriz(int mat[][ARREGLO_MAX], int f, int c) {
     int i, j;
     printf("\nMatriz original ingresada:\n");
@@ -70,7 +70,7 @@ void imprimirMatriz(int mat[][ARREGLO_MAX], int f, int c) {
     }
 }
 
-// Funci�n para obtener el valor m�ximo de una fila espec�fica
+// Función para obtener el valor máximo de una fila específica
 int obtenerMaximoDeFila(int mat[][ARREGLO_MAX], int fila, int c) {
     int j, max = mat[fila][0];
     for (j = 1; j < c; j++) {
@@ -80,3 +80,8 @@ int obtenerMaximoDeFila(int mat[][ARREGLO_MAX], int fila, int c) {
     }
     return max;
 }
+//NRC: #20823_G8_FP
+//Colaboradores
+//Astudillo Adriana
+//Muñoz Sarahi
+//Nero Alan
