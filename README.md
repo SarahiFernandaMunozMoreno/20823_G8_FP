@@ -6,8 +6,7 @@
 ## 📂 Contenido
 
 - [🔢 Talleres](Trabajos_en_clases/Talleres)
-- [📝 Evaluaciones](./Unidades/Unidad_2/)
-- [🧪 Proyecto](./Proyectos/)
+- [📝 Evaluaciones](./Unidades/Unidad_3/)
 - [👽 Codigos](./Codigos/)
 - [☺️ Colaboradores](./Unidades/)
 - [🎲 Documentos](./Documentos/)
